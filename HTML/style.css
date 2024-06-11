@@ -1,0 +1,19 @@
+#heading1{
+    color: red;
+}
+#heading2{
+    color: blue;
+}
+.headings{
+    border: 2px solid ;
+    padding: 2px;
+    /* display: inline; */
+}
+p:nth-child(3n+5){
+    background-color: red;
+}
+
+::selection{
+    color: red;
+    background: black;
+}

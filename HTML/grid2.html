@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 30% 60%;
+            grid-template-areas: "header header header"
+            "content sidebar sidebar"
+            "content footer footer";
+
+        }
+        .container div{
+            background-color: grey;
+            text-align: center;
+            margin: 10px;
+            padding: 15px;
+        }
+        .item1{
+            grid-area: header;
+        }
+        .item2{
+            grid-area: sidebar;
+        }
+        .item3{
+            grid-area: content;
+        }
+        .item4{
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <button>Home</button>
+                <button>About</button>
+            </div>
+            <div>
+                <button>Kratos</button>
+            </div>
+            <div>
+                <button>Contact Us</button>
+            </div>
+        </div>
+        <div class="item2">Sidebar</div>
+        <div class="item3">Content</div>
+        <div class="item4">Footer</div>
+    </div>
+</body>
+</html>

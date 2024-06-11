@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            padding: 20px;
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: 30% 60%; */
+            grid-template-areas: "header header header header"
+            "content1 content1 content2 content2"
+            "footer footer footer footer";
+
+        }
+        .container div{
+            background-color: grey;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+        }
+        .header>div{
+            background: burlywood;
+            margin: 3px;
+            padding: 10px;
+
+        }
+        .header{
+            grid-area: header;
+            background-color: burlywood;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .links{
+            display: flex;
+            gap: 10px;
+        }
+        .content1{
+            grid-area: content1;
+        }
+        .content2{
+            grid-area: content2;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                logo
+            </div>
+            <div class="links">
+                <div>Home</div>
+                <div>About</div>
+                <div>Content</div>
+                <div>Blog</div>
+            </div>
+            <div>
+                navlink2
+            </div>
+            <div>
+                search
+            </div>
+        </div>
+        <div class="content1"></div>
+        <div class="content2"></div>
+        <div class="footer"></div>
+
+    </div>
+</body>
+</html>

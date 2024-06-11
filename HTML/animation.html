@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .item{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: antiquewhite;
+            animation-name: screensaver;
+            animation-duration: 4s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+            animation-timing-function:linear;
+            /* animation-fill-mode:forwards; */
+        }
+        @keyframes screensaver {
+            0%{
+                background-color: rgb(184, 111, 16);top: 0px;left:0px;
+            }
+            25%{
+                background-color: rgb(243, 64, 64);
+                top: 0px;left:250px;
+            }
+            50%{
+                    background-color: #e1aa12;
+                    top: 250px;left:250px;
+            }
+            75%{
+                background-color: #bbff00;
+                top: 250px;left:0px;
+            }
+            100%{
+                background-color: #00ff77;
+                top: 0px;left:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+</body>
+</html>
