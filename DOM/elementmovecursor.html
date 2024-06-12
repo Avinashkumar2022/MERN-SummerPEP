@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #round{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: aqua;
+            position: absolute;
+            transition:linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="round" ></div>
+    <script>
+        document.addEventListener("mousemove",(e)=>{
+            var x =event.clientX;
+            var y =event.clientY;
+            x=x-11;
+            y=y-9;            
+
+            let element=document.getElementById("round")
+            element.style.left=`${x}px`;
+            element.style.top=`${y}px`;
+        })
+    </script>
+</body>
+</html>

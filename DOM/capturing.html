@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #gparent{
+            background-color: aquamarine;
+            width: 160px;
+            height: 160px;
+            /* border: 2px solid red; */
+        }
+        #parent{
+            background-color: rgb(255, 145, 0);
+            width: 100px;
+            height: 100px;
+        }
+        #child{
+                    
+            background-color: rgb(157, 255, 0);
+            width: 60px;
+            height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="gparent">
+        <div id="parent" >
+            <div id="child" onclick="event.stopPropagation">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("gparent").addEventListener("click", ()=>
+        {
+            console.log("Grand-Parent event triggered")
+            event.stopPropagation
+            
+        })
+        document.getElementById("parent").addEventListener("click", ()=>
+        {
+            console.log("Parent event triggered")
+        })
+        document.getElementById("child").addEventListener("click", ()=>
+        {
+            console.log("Child event triggered")
+        })
+    </script>
+</body>
+</html>

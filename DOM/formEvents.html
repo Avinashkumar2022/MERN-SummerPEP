@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input onfocus="fun()" type="text" id="input1">
+        <input onblur="fun1()" type="text" id="input2">
+    </form>
+    <script>
+        function fun()
+        {
+            let element=document.getElementById("input1");
+            element.style.backgroundColor="green";   
+            console.log(event.target.value)
+        }
+
+        function fun1()
+        {
+            let element=document.getElementById("input2");
+            element.style.backgroundColor="green";   
+            console.log(event.target.value)
+        }
+    </script>
+
+</body>
+</html>

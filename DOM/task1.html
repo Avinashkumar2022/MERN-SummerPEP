@@ -17,8 +17,19 @@
         listItem.innerHTML=document.getElementById("input").value;
         let ul=document.getElementById("list");
         ul.appendChild(listItem);
+        let removeBtn=document.createElement("button");
+        removeBtn.innerHTML="Remove";
+        // removeBtn.style.backgroundColor="aqua";
+        removeBtn.style.padding="5px";
+        removeBtn.onclick=()=>
+        {
+            ul.removeChild(listItem);
+            ul.removeChild(removeBtn);
+        }
+        listItem.appendChild(removeBtn);
+        ul.appendChild(removeBtn);
 
-        document.getElementById("input").value=" ";
+        document.getElementById("input").value="";
         
     }
     </script>

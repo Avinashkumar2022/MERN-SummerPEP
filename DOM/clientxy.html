@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p onmousemove="fun(event)" id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolores eum eos nostrum, optio tempore exercitationem quam officia provident possimus, at corrupti cumque distinctio excepturi ea recusandae, ipsa magni sint consectetur ut ex itaque! Ipsum ut sapiente tenetur aut, quam aspernatur sit, nulla eveniet, officia optio cumque atque repellendus distinctio?</p>
+
+    <script>
+        function fun(){
+            var x =event.clientX;
+            var y =event.clientY;
+            let element=document.getElementById("para")
+            // console.log("Avinash")
+            console.log(`x:${x} :: y:${y}`);
+            if(x>250)
+            {
+                element.style.backgroundColor="pink"
+                element.style.borderRadius="50%"
+            }
+            else if(y<100 && x>50)
+            {
+                element.style.backgroundColor="blue";                
+            }
+        }
+    </script>
+
+</body>
+</html>

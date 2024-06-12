@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+    </ul>
+    <button onclick="replace()">Replace</button>
+    <button onclick="remove()">Remove</button>
+
+    <script>
+        function replace()
+        {
+            let list=document.getElementById("list").children[2];
+            let newNode=document.createTextNode("MongoDB");
+            list.replaceChild(newNode,list.childNodes[0]);
+            console.log(newNode);
+        }
+        function remove()
+        {
+            let list =document.getElementById("list");
+            // if(list.hasChildNodes()){
+            //     list.removeChild(list.firstChild);
+
+            // }
+            // while(list.hasChildNodes()){
+            //     list.removeChild(list.firstChild)
+            // }
+            if(list.children[2]){
+                list.removeChild(list.children[2]);
+
+            }
+        }
+    </script>
+</body>
+</html>

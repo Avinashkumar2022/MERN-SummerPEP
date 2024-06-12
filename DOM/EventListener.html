@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    <button id="btn">Click me</button>
+
+    Types of Events:
+        Mouse events-
+            click, mouseover, mousemove, mouseout,dbclick
+
+        Keyboard events-
+            keyup, keydown, keypress
+
+        Form events-
+            focus, blur, change
+            
+        Window events-
+            load
+
+    <script>
+
+        let btn=document.getElementById("btn");
+
+        // element.addEventListener("event type", function to perform, Event capturing/bubbling)
+
+        btn.addEventListener("click",()=>
+        {
+            document.getElementById("heading").innerHTML="Avinash";
+        })
+
+    </script>
+</body>
+</html>
