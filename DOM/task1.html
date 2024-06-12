@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" name="text" id="input">
+        <button id="btn1" onclick="newTask()">Submit</button>
+
+    <ol id="list">
+
+    </ol>
+
+    <script>
+    function newTask(){
+        let listItem= document.createElement("li");
+        listItem.innerHTML=document.getElementById("input").value;
+        let ul=document.getElementById("list");
+        ul.appendChild(listItem);
+
+        document.getElementById("input").value=" ";
+        
+    }
+    </script>
+</body>
+</html>

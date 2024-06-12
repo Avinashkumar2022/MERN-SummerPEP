@@ -4,6 +4,62 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <!-- 
+    
+    Ways to select elements in js: 
+
+    -- document.getElementById("id");
+    -- document.getElementByClassName("class name");
+    -- document.getElementByTagName("tag name");
+    -- document.getElementByName("name");
+    -- document.querySelector("");
+    -- document.querySelectorAll("");
+
+    -->
+
+    <div class="main">
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <h3 class="para"></h3>
+        <p class="para"></p>
+
+        <h1 id="heading"></h1>
+        <button class="buttons" onclick="fun1()">Inner HTML</button>
+        <br>
+        <br>
+        <button class="buttons" onclick="fun2()">Inner Text</button>
+
+        <button class="btn2" onclick="fun3()">Click</button>
+    </div>
+
+    <script>
+        function fun1()
+        {
+            let element=document.getElementById("heading");
+            element.innerHTML="hello <mark>Good morning</mark>";
+        }
+
+        function fun2()
+        {
+            let element=document.getElementById("heading");
+            element.innerText="hello <mark>Good morning</mark>";
+            }
+            
+            function fun3()
+            {
+                let element2=document.getElementsByClassName("para");
+                for(let i=0;i<element2.length;i++)
+                {
+                    element2[i].innerHTML="para class members";
+                    element2[i].style.color="red"
+                }
+        }
+        
+        
+
+
+    </script>
 </body>
 </html>

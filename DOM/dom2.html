@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">My name is John Cena</h1>
+    <p class="para"></p>
+    <div class="main">
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+        <p>Content</p>
+    </div>
+
+    <script>
+
+        let ele=document.querySelectorAll("h1");
+        ele[0].style.backgroundColor="aqua"
+        console.log(ele);
+
+        let ele2=document.querySelector("div p:nth-child(4)");
+        ele2.style.backgroundColor="aqua"
+        console.log(ele2);
+
+    </script>
+</body>
+</html>
