@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Get-> I am trying to read the data
+    Post-> I want to read the data but also write new data (can also update but not a standard practice)
+    Put-> I want to read the data but also update the existing data(can also write new data but not a standard practice)
+    When we use these methods properly and make an API then those APIs will be called REST APIs.
+    -->
+    <!-- 
+    fetch("url",{method:"post",})
+
+    axios.post
+    axios.put
+    -->
+
+    <h1>Get Response</h1>
+    <button id="getBtn">Get Data</button>
+
+    <div>
+        <h1>Post </h1>
+        <input type="text" name="title" id="title" placeholder="Title">
+        <input type="body" name="body" id="body" placeholder="Body">
+        <button id="createBtn">Post Data</button>
+    </div>
+    <div>
+        <h1>Update</h1>
+        <input type="number" name="number" id="number">
+        <input type="text" id="titleupdate" placeholder="Title">
+        <input type="body" id="bodyupdate" placeholder="Body">
+        <button id="putBtn">Update Data</button>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
