@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button>
+
+    <script>
+        let btn=document.getElementById("btn");
+        function throttle(fun,delay)
+        {
+            let lastCall=0;
+            return function()
+            {
+                let now=Date.now();
+                if(now-lastCall>delay)
+                {
+                    lastCall=now;
+                    display();
+                }
+            }
+        }
+        function display()
+        {
+            console.log("hello")
+        }
+        btn.addEventListener("click",display);
+    </script>
+</body>
+</html>

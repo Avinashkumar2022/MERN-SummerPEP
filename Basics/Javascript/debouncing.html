@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="input" id="input">
+    <button>Submit</button>
+
+    <script>
+        let element=document.getElementById("input");
+
+        function debounce(func,delay)
+        {
+            let timeout;
+            return function()
+            {
+                clearTimeout(timeout);
+                timeout=setTimeout(func,delay);
+            }
+        }
+
+        function display()
+        {
+            console.log("hello");
+        }
+        element.addEventListener("keyup",debounce(display,1000))
+    </script>
+</body>
+</html>
