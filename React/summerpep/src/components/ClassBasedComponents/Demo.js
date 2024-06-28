@@ -45,9 +45,12 @@ export default class Demo extends Component {
     componentDidMount(){
         console.log("Mounting Called")
         setInterval(()=>{
-            this.setState(count:this.state.count+1)
+            this.setState(count,this.state.count+1)
         },1000)
     }
+
+// Hooks are methods in react with which we can hook lifecycle methods with react functionality
+
   render() {
     // this.state={
     //     count:0,
