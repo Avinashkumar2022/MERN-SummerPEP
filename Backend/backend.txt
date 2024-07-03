@@ -1,0 +1,2 @@
+server deals with request and response.
+Browser makes a request to the server for a resource.
