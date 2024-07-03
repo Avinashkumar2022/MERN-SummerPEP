@@ -1,2 +1,25 @@
 server deals with request and response.
 Browser makes a request to the server for a resource.
+We can use backend to manage the system and to make sure that the frontend works perfectly.
+Users don't interact directly with the backend instead they can interact through the frontend.
+
+In MERN JS is the primary language for the use case in backend.
+
+MERN there are three layers:-
+    View layer- React
+
+    Application Layer- Node.js and express js
+
+    Database Layer- MongoDB
+
+
+Node.js is a JS runtime environment that uses chromes V8 engine to execute the code.
+
+Nodejs is single_threaded, so it executes one thread at a time.
+
+Node js has event driven architecture- When you perform an action in node js, it will perform an event.
+
+Nodejs is non blocking in nature.
+
+Node js is asynchronous in nature
+
