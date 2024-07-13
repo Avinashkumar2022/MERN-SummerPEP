@@ -28,7 +28,7 @@ const fs= require("fs")
 //     else{
 //         res.end("Error Page")
 //     }
-    
+
 // }).listen(3000,()=>{console.log("listening to port 3000")})
 
 const path=require("path")
