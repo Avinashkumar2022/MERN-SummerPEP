@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Historical India</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Header and footer styles */
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* Responsive adjustments for smaller screens */
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .card img {
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Rich History of India</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <img src="images/Taj mahal.jpg" alt="Taj Mahal">
+                <h3>Taj Mahal</h3>
+                <p>An ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned 1628–1658) to house the tomb of his favourite wife Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</p>
+            </div>
+            <div class="card">
+                <img src="images/Red_fort.webp" alt="Red Fort">
+                <h3>Red Fort</h3>
+                <p>A 17th-century fort in the city of Delhi in India. It was the main residence of the Mughal emperors for nearly 200 years, until 1857. It is also known by the names "Lal Qila" and "Qila-e-Mughala" and is designated a UNESCO World Heritage Site.</p>
+            </div>
+            <div class="card">
+                <img src="images/India_Gate.jpg" alt="India Gate">
+                <h3>India Gate</h3>
+                <p>The India Gate is a war memorial for the dead of the Indian Armies who fell during World War I and the Third Anglo-Afghan War.It stands as a memorial to 74,187 soldiers of the Indian Army who died between 1914 and 1921 in the First World War. 13,300 servicemen's names, including some soldiers and officers from the United Kingdom, are inscribed on the gate.</p>
+            </div>
+            <div class="card">
+                <img src="images/Khajuraho_Temple.avif" alt="Khajuraho Temples">
+                <h3>Khajuraho Temples</h3>
+                <p>A group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh, India. There are about 20 temples surviving on the site, of which several are UNESCO World Heritage Sites. The Khajuraho group of temples has been classified as a "group of monuments" as per the Archaeological Survey of India.</p>
+            </div>
+            </div>
+    </main>
+
+    <footer id="footer">
+        <p>Designed and developed by Anshu Priya</p>
+    </footer>
+</body>
+</html>

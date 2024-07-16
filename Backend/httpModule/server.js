@@ -36,10 +36,18 @@ const path=require("path")
 const server=http.createServer((req,res)=>{
     let filepath=path.join(__dirname,"public",req.url==="/"?"index.html":req.url)
 
-    const mimiTypes={
-        "html":"text"
-    }
+    let contentType="text/html";
+    const extName=path.extname(filepath)
 
+    const mimeTypes={   //Multipurpose Internet Mail Extension
+        "html":"text",
+        "css":"text/css",
+        "js":"text/javascript",
+        "png":"image/png",
+        "jpg":"image/jpg",
+        "jpeg":"image/jpeg"
+    }
+    contentType=mimeTypes[extName]
     fs.readFile(filepath,(err,content)=>{
         if(err){
             if(err.code==='ENOENT')
@@ -50,11 +58,15 @@ const server=http.createServer((req,res)=>{
                 })
             }
             else{
-                res.writeHead(500,{"Content-Type"})
+                res.writeHead(500,{"Content-Type":contentType})
+                res.end(`Server Error:${err.code}`)
             }
         }
         else{
-
+            res.writeHead(200,{"Content-Type":"text/html"});
+            res.end(content,'utf-8')
         }
     })
+}).listen(4000,()=>{
+    console.log("Listening to port 4000")
 })
