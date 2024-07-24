@@ -47,7 +47,7 @@ const server=http.createServer((req,res)=>{
         "jpg":"image/jpg",
         "jpeg":"image/jpeg"
     }
-    contentType=mimeTypes[extName]
+    contentType=mimeTypes[extName] || "application/octet-stream"
     fs.readFile(filepath,(err,content)=>{
         if(err){
             if(err.code==='ENOENT')
